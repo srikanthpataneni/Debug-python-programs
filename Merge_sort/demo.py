@@ -34,3 +34,9 @@ def merge_sort(arr):
 arr = [38, 27, 43, 3, 9, 82, 10]
 merge_sort(arr)
 print(f"The sorted array is: {arr}")
+
+##The issue in the provided code is that the recursive calls to merge_sort(left) and merge_sort(right) 
+##They don't actually update the arr list with the sorted values from the left and right sublists.
+##You need to capture the sorted sublists returned by these calls and merge them back into the original arr. 
+
+
